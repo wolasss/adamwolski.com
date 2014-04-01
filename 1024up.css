@@ -1,0 +1,20 @@
+h1 {
+	font-size: 300%;
+	margin-bottom: 60px;
+	margin-left: 90px;
+}
+
+div.left {
+	display: block;
+	margin-left: 90px;
+}
+
+article div.content {
+	margin-left: 160px;
+	max-width: 600px;
+}
+
+section#findme {
+	margin-left: 90px;
+}
+
