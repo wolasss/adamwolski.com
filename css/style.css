@@ -29,6 +29,17 @@ header {
 	z-index: 1;
 }
 
+header:before {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	content: " ";
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+	z-index: -1;
+}
+
 .counter {
 	margin-top: auto;
 	visibility: hidden;
@@ -56,17 +67,6 @@ header {
 
 }
 
-header:before {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	content: " ";
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
-	z-index: -1;
-}
-
 .arrow {
 	width: 100%;
 	text-align: center;
@@ -89,24 +89,21 @@ header:before {
 .introduction-text {
 	font-size: 1.75em;
 	font-weight: 300;
-	text-align: center;
 }
 
 .introduction-text strong {
 	font-weight: 400;
 }
 
-.position {
+.job-text {
 	font-size: 1.75em;
-	color: #EE2824;
+	color: #F6DB39;
 	margin: 10px 0;
 	font-weight: 600;
-	text-align: center;
 	text-transform: uppercase;
 }
 
 .nav {
-	text-align: center;
 	display: flex;
 	justify-content: center;
 	width: 100%;
@@ -129,29 +126,12 @@ header:before {
 	align-items: center;
 	margin: 0 15px;
 	transition: background 0.3s ease;
-}
-
-.icon:hover {
-	background: #084E73;
-	color: #fff;
-	border-color: transparent;
-	border-color: #084E73;
-}
-
-.icon-yellow:hover {
-	background: #F6DB39;
-	border-color: #F6DB39;
-	color: #555;
+	cursor: pointer;
 }
 
 .icon-black:hover {
 	background: rgba(0, 0, 0, .3);
 	border-color: rgba(0, 0, 0, .3);
-}
-
-.icon-red:hover {
-	background: #F2352D;
-	border-color: #F2352D;
 }
 
 .nav a {
