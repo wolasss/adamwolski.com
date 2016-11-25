@@ -8,6 +8,12 @@
 	color: #ffffff;
 }
 
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+	margin-left: 0;
+	margin-right: 0;
+}
+
 html,
 body {
 	margin: 0;
@@ -265,7 +271,6 @@ li.category {
 	}
 
 	.about {
-		height: 100%;
 		height: auto;
 	}
 
@@ -301,10 +306,6 @@ li.category {
 		font-size: 12px;
 	}
 
-	.nav {
-		position: static;
-	}
-
 	.nav .icon {
 		font-size: 32px;
 		padding: 10px;
@@ -333,10 +334,4 @@ li.category {
 		padding-right: 25%;
 	}
 
-}
-
-[class^="icon-"]:before,
-[class*=" icon-"]:before {
-	margin-left: 0;
-	margin-right: 0;
 }
