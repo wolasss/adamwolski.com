@@ -18,16 +18,42 @@ body {
 header {
 	width: 100%;
 	position: relative;
-	height: 100vh;
-	background: url('../img/1.jpg');
+	min-height: 100vh;
+	background-image: url('../img/1-full.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	color: #fff;
 	z-index: 1;
+}
+
+.counter {
+	margin-top: auto;
+	visibility: hidden;
+}
+
+.first {
+	margin-top: auto;
+}
+
+.last {
+	margin-bottom: auto;
+}
+
+@media only screen and (max-width:828px) {
+	header {
+		background-image: url('../img/1-mobile.jpg');
+	}
+
+}
+
+@media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) and (max-width:828px) {
+	header {
+		background-image: url('../img/1-mobile@2x.jpg');
+	}
+
 }
 
 header:before {
@@ -42,9 +68,6 @@ header:before {
 }
 
 .arrow {
-	position: absolute;
-	bottom: 0;
-	left: 0;
 	width: 100%;
 	text-align: center;
 }
@@ -64,9 +87,8 @@ header:before {
 }
 
 .introduction-text {
-	font-size: 28px;
+	font-size: 1.75em;
 	font-weight: 300;
-	margin: 15px 0;
 	text-align: center;
 }
 
@@ -75,7 +97,9 @@ header:before {
 }
 
 .position {
-	font-size: 28px;
+	font-size: 1.75em;
+	color: #EE2824;
+	margin: 10px 0;
 	font-weight: 600;
 	text-align: center;
 	text-transform: uppercase;
@@ -85,10 +109,8 @@ header:before {
 	text-align: center;
 	display: flex;
 	justify-content: center;
-	position: absolute;
-	bottom: 100px;
-	left: 0;
 	width: 100%;
+	margin-bottom: 2%;
 }
 
 .icon {
@@ -155,7 +177,6 @@ header:before {
 .aside {
 	display: inline-block;
 	width: 50%;
-	border-right: 1px solid #ccc;
 	padding-right: 20px;
 	padding-left: 10%;
 	box-sizing: border-box;
@@ -164,6 +185,7 @@ header:before {
 
 .skills {
 	display: inline-block;
+	border-left: 1px solid #ccc;
 	width: 50%;
 	text-align: left;
 	padding-left: 20px;
@@ -177,7 +199,6 @@ header:before {
 	font-size: 28px;
 	margin: 0;
 	margin-bottom: 22px;
-	line-height: 20px;
 }
 
 .skills ul {
@@ -228,7 +249,6 @@ li.category {
 	}
 
 	.aside {
-		border: 0;
 		margin-bottom: 50px;
 	}
 
@@ -237,10 +257,27 @@ li.category {
 		width: 75%;
 		height: auto;
 		padding: 0;
+		border: 0;
 	}
 
 	.skills h4 {
 		text-align: center;
+	}
+
+}
+
+@media(max-width:375px) {
+	header {
+		font-size: 12px;
+	}
+
+	.nav {
+		position: static;
+	}
+
+	.nav .icon {
+		font-size: 32px;
+		padding: 10px;
 	}
 
 }
