@@ -4,58 +4,89 @@
 	<meta charset="utf-8" />
 	<meta lang="en" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300&subset=latin,latin-ext' rel='stylesheet' type='
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='
 	text/css'>
-	<!--[if IE 7]>
-    <link rel="stylesheet" href="css/fontello-ie7.css">
-    <![endif]-->
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fontello.css">
+
 	<title>Adam Wolski - Front-end developer</title>
 </head>
 
 <body>
-	<header class="info animated bounceInDown">
-		<div class="intro">
-			<img src="img/photo.png">
-			<h1>Adam Wolski</h1>
-			<p>Front-end developer</p>
-			<p class="city">
-			Grenoble, France</p>
+	<header>
+		<div class="introduction-text">
+			Hello. My name is <strong>Adam Wolski</strong> and I am 
 		</div>
-		<div class="touch">
-			Want to get in touch? <a href="#" class="mailto">Email me.</a>
+		<div class="position">
+			<!-- <span class="typed" data-typer-targets='building slick apps, to write javascript, working remotely, slacklining, rock climbing, mountains'></span>. -->
+			<span class="typed" data-typer-targets='a web developer, a front-end developer, a javascript developer, a node.js developer, a remote developer'></span>.
+
 		</div>
+		<div class="introduction-text">
+			Want to get in touch?
+		</div>
+		
+		<nav class="nav">
+			<a href="mailto:konakt@adamwolski.com" class="icon icon-black"><i class="fa icon-mail"></i></a>
+			<a href="https://github.com/wolasss" class="icon icon-black"><i class="fa icon-github"></i></a>
+			<a href="https://www.linkedin.com/in/adam-wolski-152b3a49" class="icon icon-linkedin"><i class="fa fa-linkedin"></i></a>
+		</nav>
+
+		<nav class="arrow">
+			<button><i class=" icon-down" aria-hidden="true"></i></button>
+		</nav>
 	</header>
-	<aside class="links animated bounceInUp">
-		<div>
-			<a href="https://www.linkedin.com/in/adam-wolski-152b3a49">
-				<i class="icon icon-linkedin"></i>
-			</a>
-			<a href="https://github.com/wolasss">
-				<i class="icon-github-circled"></i> 
-			</a>
-			<a href="https://twitter.com/wolasss">
-				<i class="icon-twitter"></i> 
-			</a>
-			<a href="https://plus.google.com/u/0/110491158897816644863">
-				<i class="icon-gplus"></i> 
-			</a>
-			<a href="skype://adamwolski.com">
-				<i class="icon-skype"></i>
-			</a>
-			<a href="http://last.fm/user/wolasss">
-				<i class="icon-lastfm"></i>
-			</a>
-			<a href="#" class="mailto">
-				<i class="icon-email"></i>
-			</a>
+	<section class="about">
+		<div class="container">
+			<div class="aside">
+				<img src="img/photo.png">
+				<h4>Adam Wolski</h4>
+				<div class="info">I am a passionate developer with great love for web technologies. <a href="mailto:kontakt@adamwolski.com" class="text-link">Contact me</a> for freelance projects.</div>
+			</div>
+			<div class="skills">
+				<h4>Things I know about</h4>
+				<ul>
+					<li class="category">Front-end</li>
+					<li>Java Script</li>
+					<li>CSS3</li>
+					<li>HTML5</li>
+					<li>Sass</li>
+					<li>Less</li>
+					<li>pre/post css</li>
+					<li>ES7</li>
+					<li>ES6</li>
+					<li>backbone</li>
+					<li>knockout</li>
+					<li>meteor</li>
+					<li>angular</li>
+					<li>react</li>
+					<li>WebRTC</li>
+					<li>RWD</li>
+					<li class="category">Back-end</li>
+					<li>Node.js</li>
+					<li>AWS</li>
+					<li>Dev ops</li>
+					<li>Mongo</li>
+					<li>MySQL</li>
+					<li>Oracle</li>
+					<li>REST</li>
+					<li>Oracle</li>
+					<li class="category">Workflow</li>
+					<li>git</li>
+					<li>svn</li>
+					<li>webpack</li>
+					<li>browserify</li>
+					<li>require</li>
+					<li>grunt</li>
+					<li>chimp</li>
+					<li>mocha</li>
+					<li>jasmine</li>
+					<li>selenium</li>
+				</ul>
+			</div>
 		</div>
-	</aside>
+	</section>	
 	
-	<script>
-		eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('3 2=8.7(".5");6(3 1=0,4=2.10;1<4;1++){2[1].11("9","5:14@12.13")}',10,15,'|i|mailLink|var|len|mailto|for|querySelectorAll|document|href|length|setAttribute|adamwolski|com|kontakt'.split('|'),0,{}))
-	</script>
 	<script>
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', 'UA-25094431-1']);
@@ -66,7 +97,31 @@
 			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
+	</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="vendor/typer.min.js"></script>
+	<script src="vendor/smoothscroll.min.js"></script>
+	<script>
+		$(function(){
+			$('.typed').typer();
+			$('.arrow button').on('click', function() {
+				if(!$(window).scrollTop()) {
+					$.smoothScroll({offset: $('header').outerHeight()});
+				} else {
+					$.smoothScroll({offset: 0});
+				}
 
+			    return false;
+			  });
+
+				$(document).scroll(function() {
+					if($(document).scrollTop()>0) {
+						$('.arrow i').removeClass('icon-down').addClass('icon-up');
+					} else {
+						$('.arrow i').removeClass('icon-up').addClass('icon-down');
+					}
+				});
+		});
 	</script>
 </body>
 </html>
