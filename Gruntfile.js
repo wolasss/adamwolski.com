@@ -16,13 +16,21 @@ module.exports = function(grunt) {
         }
       }
     },
+    concat: {
+      js: {
+        src: 'vendor/*.js',
+        dest: 'vendor.min.js'
+      }
+    },
     clean: ['css/style.min.css', 'css/style-prefixed.css']
   });
 
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-concat');
 
-  grunt.registerTask('default', ['autoprefixer', 'cssmin']);
+  grunt.registerTask('default', ['autoprefixer', 'cssmin', 'concat']);
   grunt.registerTask('reboot', ['clean', 'default']);
 };

@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='
 	text/css'>
+	<!--[if IE 7]>
+    <link rel="stylesheet" href="css/fontello-ie7.css">
+    <![endif]-->
 	<link rel="stylesheet" href="css/style.min.css">
-
-	<title>Adam Wolski - Front-end developer</title>
+	<title>Adam Wolski - JavaScript developer</title>
 </head>
 
 <body>
@@ -26,7 +28,7 @@
 		</div>
 		
 		<nav class="nav">
-			<a href="mailto:konakt@adamwolski.com" class="icon icon-black"><i class="fa icon-mail"></i></a>
+			<a class="mailto icon icon-black"><i class="fa icon-mail"></i></a>
 			<a href="https://github.com/wolasss" class="icon icon-black"><i class="fa icon-github"></i></a>
 			<a href="https://www.linkedin.com/in/adam-wolski-152b3a49" class="icon icon-black"><i class="fa icon-linkedin"></i></a>
 		</nav>
@@ -40,7 +42,8 @@
 			<div class="aside">
 				<img src="img/photo.png">
 				<h4>Adam Wolski</h4>
-				<div class="info">I am a passionate developer with great love for web technologies. <a href="mailto:kontakt@adamwolski.com" class="text-link">Contact me</a> for freelance projects.</div>
+				<div class="info">I am a passionate remote developer with great love for web technologies. <a class="mailto text-link">Contact me</a> for freelance projects.
+				</div>
 			</div>
 			<div class="skills">
 				<h4>Things I know about</h4>
@@ -52,7 +55,6 @@
 					<li>Sass</li>
 					<li>Less</li>
 					<li>pre/post css</li>
-					<li>ES7</li>
 					<li>ES6</li>
 					<li>backbone</li>
 					<li>knockout</li>
@@ -69,7 +71,6 @@
 					<li>MySQL</li>
 					<li>Oracle</li>
 					<li>REST</li>
-					<li>Oracle</li>
 					<li class="category">Workflow</li>
 					<li>git</li>
 					<li>svn</li>
@@ -97,10 +98,10 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
 	</script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script src="vendor/typer.min.js"></script>
-	<script src="vendor/smoothscroll.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="vendor.min.js"></script>
 	<script>
+		eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('3 2=8.7(".5");6(3 1=0,4=2.10;1<4;1++){2[1].11("9","5:14@12.13")}',10,15,'|i|mailLink|var|len|mailto|for|querySelectorAll|document|href|length|setAttribute|adamwolski|com|kontakt'.split('|'),0,{}))
 		$(function(){
 			$('.typed').typer();
 			$('.arrow button').on('click', function() {
@@ -109,15 +110,14 @@
 				} else {
 					$.smoothScroll({offset: 0});
 				}
-
-			    return false;
 			  });
 
 				$(document).scroll(function() {
+					var $icon = $('.arrow i');
 					if($(document).scrollTop()>0) {
-						$('.arrow i').removeClass('icon-down').addClass('icon-up');
+						$icon.removeClass('icon-down').addClass('icon-up');
 					} else {
-						$('.arrow i').removeClass('icon-up').addClass('icon-down');
+						$icon.removeClass('icon-up').addClass('icon-down');
 					}
 				});
 		});
