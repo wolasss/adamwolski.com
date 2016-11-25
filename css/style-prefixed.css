@@ -25,6 +25,7 @@ header {
 	position: relative;
 	height: 100vh;
 	background: url('../img/1.jpg');
+	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	display: -webkit-box;
@@ -318,4 +319,10 @@ li.category {
 		padding-right: 25%;
 	}
 
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+	margin-left: 0;
+	margin-right: 0;
 }
