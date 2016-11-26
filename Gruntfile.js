@@ -12,7 +12,7 @@ module.exports = function(grunt) {
     cssmin: {
       combine: {
         files: {
-          'css/style.min.css': ['css/animate.css', 'css/fontello.css', 'css/style-prefixed.css']
+          'css/style.min.css': ['css/tipr.css', 'css/fontello.css', 'css/style-prefixed.css']
         }
       }
     },
