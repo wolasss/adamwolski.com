@@ -16,6 +16,16 @@ module.exports = function(grunt) {
         }
       }
     },
+    penthouse: {
+      extract: {
+        outfile: '.tmp/out.css',
+        css: 'css/style.min.css',
+        url: 'http://adamwolski.local',
+        width: 1300,
+        height: 900,
+        skipErrors: false // this is the default 
+      },
+    },
     concat: {
       js: {
         src: ['vendor/*.js', 'main.js'],
@@ -30,6 +40,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-penthouse');
+  grunt.loadNpmTasks('grunt-codekit');
 
   grunt.registerTask('default', ['autoprefixer', 'cssmin', 'concat']);
   grunt.registerTask('reboot', ['clean', 'default']);
