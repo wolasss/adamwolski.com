@@ -18,8 +18,8 @@ module.exports = function(grunt) {
     },
     concat: {
       js: {
-        src: 'vendor/*.js',
-        dest: 'vendor.min.js'
+        src: ['vendor/*.js', 'main.js'],
+        dest: 'scripts.min.js'
       }
     },
     clean: ['css/style.min.css', 'css/style-prefixed.css']
