@@ -54,6 +54,7 @@ header:before {
 .photo {
 	border-radius: 9999em;
 	border: 5px solid #ddd;
+	width: 125px;
 }
 
 .counter {
