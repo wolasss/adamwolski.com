@@ -23,7 +23,7 @@ module.exports = function(grunt) {
         url: 'http://adamwolski.local',
         width: 1300,
         height: 900,
-        skipErrors: false // this is the default 
+        skipErrors: false // this is the default
       },
     },
     concat: {
