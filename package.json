@@ -1,6 +1,9 @@
 {
   "name": "adamwolski-site",
   "version": "0.1.0",
+  "scripts": {
+    "build": "docker build  . --platform linux/amd64 -t wolasss/adamwolski-site:latest"
+  },
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-autoprefixer": "~0.7.2",
